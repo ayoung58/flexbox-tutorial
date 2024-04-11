@@ -58,7 +58,9 @@
   .photo-grid {
     width: 900px;
     display: flex;
-    justify-content: flex-start;
+    /* These two wrap and center the objects in the container */
+    justify-content: center;
+    flex-wrap: wrap;
   }
   
   .photo-grid-item {
