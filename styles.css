@@ -9,9 +9,15 @@
     background-color: #5995DA;  /* Blue */
     padding: 20px 0;
     display: flex;
+    /* This would have same effect as adding margin: 0 auto in .menu; it essentially centers element */
+    /* Values: center, flex-start (push to left), flex-end (push to right), space-around, space-between */
+    justify-content: center;
   }
   
   .menu {
     border: 1px solid #fff;  /* For debugging */
     width: 900px;
+    /* Makes the item a container too */
+    display: flex;
+    justify-content: space-around;
   }
