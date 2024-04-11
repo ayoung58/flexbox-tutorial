@@ -29,7 +29,7 @@
   }
 
   .login {
-    /* margins still work as they do without flex */
+    /* margin still work as they do without flex */
     margin-left: 20px;
   }
 
@@ -45,4 +45,7 @@
     height: 300px;
     display: flex;
     justify-content: space-between;
+    /* Values: center, flex-start, flex-end, stretch, baseline */
+    /* Stretch allows you to display the background of each element (stretches to fix the height) */
+    align-items: center;
   }
