@@ -17,7 +17,18 @@
   .menu {
     border: 1px solid #fff;  /* For debugging */
     width: 900px;
+    padding: 5px 15px;
     /* Makes the item a container too */
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
+  }
+
+  .links {
+    display: flex;
+    justify-content: flex-end;
+  }
+
+  .login {
+    /* margins still work as they do without flex */
+    margin-left: 20px;
   }
