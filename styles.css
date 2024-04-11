@@ -61,7 +61,8 @@
     /* These two wrap and center the objects in the container */
     justify-content: center;
     flex-wrap: wrap;
-    flex-direction: column;
+    /* Changes direction, but only the direction in EACH ROW (so in website it shows 3 2 1, then 5 4) */
+    flex-direction: row-reverse;
     align-items: center;
   }
   
