@@ -104,7 +104,8 @@
     /* Gives us full control of how the items fit the containers */
     flex: 1;
     /* flex: is actually divided into flex-grow, flex-shrink, and flex-basis. 
-    Flex-basis sets the initial size of a flex item, so any sort of flex-growing or flex-shrinking starts from that baseline size*/
+    Flex-basis sets the initial size (like width or height but it depends on the axis) 
+    of a flex item, so any sort of flex-growing or flex-shrinking starts from that baseline size */
     /* Using flex-basis: auto tells flexbox to check for the width size and start from there, whereas with flex-basis: 0, it starts from 0 */
     /* If you start from zero and the container doesn't have a width, then everything collapses. */
   }
