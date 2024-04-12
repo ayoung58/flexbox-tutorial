@@ -94,3 +94,33 @@
     display: flex;
     justify-content: space-between;
   }
+
+  .footer-item {
+    border: 1px solid #fff;
+    background-color: #D6E9FE;
+    height: 200px;
+    /* Flex of 1 means to stretch to match width of container (i.e. footer) */
+    /* Increasing weight of one of them causes them to grow faster than others */
+    /* Gives us full control of how the items fit the containers */
+    flex: 1;
+    /* flex: is actually divided into flex-grow, flex-shrink, and flex-basis. 
+    Flex-basis sets the initial size of a flex item, so any sort of flex-growing or flex-shrinking starts from that baseline size*/
+    /* Using flex-basis: auto tells flexbox to check for the width size and start from there, whereas with flex-basis: 0, it starts from 0 */
+    /* If you start from zero and the container doesn't have a width, then everything collapses. */
+  }
+
+  .footer-one,
+  .footer-three {
+    background-color: #5995DA;
+    /* Flex initial allows us to fix the size of these two items */
+    /* This is a fairly common layout, as many websites have a fixed-width sidebar, with adjustable main text */
+    flex: initial;
+    width: 300px;
+  }
+
+  .signup {
+    /* auto margins takes up all the space in a flex container */
+    /* This allows us to take out the links class div */
+    margin-left: auto;
+  } 
+
